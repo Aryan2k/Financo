@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/addUserImg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="#E1E5EA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="16dp"
+        app:riv_tile_mode="clamp"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/userMakeTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="#E1E5EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/addUserImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userModelTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="2dp"
+        android:background="#E1E5EA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/addUserImg"
+        app:layout_constraintTop_toBottomOf="@id/userMakeTxt" />
+
+    <TextView
+        android:id="@+id/addUserImageTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_bg_12"
+        android:backgroundTint="#E1E5EA"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@id/deleteUserTxt"
+        app:layout_constraintStart_toEndOf="@id/addUserImg"
+        app:layout_constraintTop_toBottomOf="@id/userModelTxt" />
+
+    <TextView
+        android:id="@+id/deleteUserTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_bg_12"
+        android:backgroundTint="#E1E5EA"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="8dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/addUserImageTxt"
+        app:layout_constraintTop_toBottomOf="@id/userModelTxt" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="#E3E0E0"
+        app:layout_constraintTop_toBottomOf="@id/addUserImageTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

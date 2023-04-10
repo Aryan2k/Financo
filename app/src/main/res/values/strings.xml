@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Financo</string>
+    <string name="name">Name</string>
+    <string name="submit">Submit</string>
+    <string name="please_enter_your_name">Please enter your name</string>
+    <string name="getting_user_details">Getting user details</string>
+    <string name="some_error_occurred">Some error occurred</string>
+    <string name="country">Country :</string>
+    <string name="probability">Probability :</string>
+    <string name="error_no_internet_connection">Error:  No internet connection</string>
+</resources>
